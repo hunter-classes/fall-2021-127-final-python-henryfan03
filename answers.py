@@ -1,16 +1,25 @@
 def isIncreasing(L):
+  """
+  takes a list as a parameter, indexes through the list looking for any occurance where L[i+1] <= L[i], and returns False if that condition is fulfilled, otherwise returns False.
+  """
   for i in range(len(L)-1):
     if L[i+1] <= L[i]:
       return False
   return True
 
 def numConvert(nums):
+  """
+  takes a list of single digit integers as a parameter, iterates through the list and concactonates the character version of the numbers in the list to a resulting variable, and returns the final concactonated string as an integer.
+  """
   result = ""
   for num in nums:
     result = result + str(num)
   return int(result)
 
 def BinConvert(binstring):
+  """
+  takes a binary value in the form of a string as a parameter, declares the maximum exponent of the binary digits using the length of the string, declares a reversed list starting from the max exponent to 0, then iterates through the binary string, where when a digit in the string == 1, the resulting variable will be equal to itself + 2(base value of binary) raised to the power of the exponent varialbe.
+  """
   result = 0
   maxexponent = len(binstring)-1
   #inversed array of indexes to align with exponents of corresponding binary digits.
