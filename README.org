@@ -1,10 +1,10 @@
 * Fall 2021 - 127 - Final Exam - Python - in class
 
-* Last Name: 
+* Last Name: Fan
 
-* First Name: 
+* First Name: Henry
 
-* GitHub username: 
+* GitHub username: henryfan03
 
 * Notes:
 
